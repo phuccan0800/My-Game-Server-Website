@@ -19,9 +19,9 @@ if ($result->num_rows > 0) {
                 $servers = $data['response']['servers'];
 
                 // Hiển thị thông tin máy chủ
-                foreach ($servers as $server) { ?>
-                <a><?echo $server['name']?> - <?echo $server['players']?>/<?echo $server['max_players']?> -> <a href="steam://connect/<?echo $row['ip'].':'.$port?>">->Connect<-</a> <br></a>
-                <?}
+                foreach ($servers as $server) {
+                    echo '<a>' . $server['name'] . ' - ' . $server['players'] . '/' . $server['max_players'] . ' -> <a href="steam://connect/' . $row['ip'] . ':' . $port . '">->Connect<-</a> <br></a>';
+                }
             } else {
                 echo 'Không tìm thấy thông tin máy chủ CS:GO. <br>';
             }
