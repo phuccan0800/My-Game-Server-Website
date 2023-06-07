@@ -1,7 +1,6 @@
 <?php
 define('CHECK', true);
 require 'connect.php';
-
 $sql = "SELECT * FROM serverlist";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
