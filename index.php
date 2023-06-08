@@ -13,13 +13,7 @@
 	<link href="css/animate.css" rel="stylesheet"> 
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet"> 
-	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> 
-	<script src="js/respond.min.js"></script> <![endif]--> 
 	<link rel="shortcut icon" href="images/logo.png"> 
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png"> 
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png"> 
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png"> 
-	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 <body>
 	<div class="preloader">
@@ -45,33 +39,32 @@
 				<li data-target="#main-carousel" data-slide-to="2"></li>
 			</ol><!--/.carousel-indicators--> 
 			<div class="carousel-inner">
-				<div class="item active" style="background-image: url(images/slider/slide3.jpg)"> 
+				<div class="item active" style="background-image: url(images/slider/slide3.gif)"> 
 					<div class="carousel-caption"> 
 						<div> 
-							<h2 class="heading animated bounceInDown">ONTOP WEBSITE</h2> 
-							<p class="animated bounceInUp">Fully Professional one page template</p> 
-							<a class="btn btn-default slider-btn animated fadeIn" href="#">Get Started</a> 
+							<h2 class="heading animated bounceInDown">ONTOP SERVER WEBSITE</h2> 
+							<p class="animated bounceInUp">Join our server community</p> 
+							<a class="btn btn-default slider-btn animated fadeIn" href="#listserver">Get Started</a> 
 						</div> 
 					</div> 
 				</div>
-				<div class="item" style="background-image: url(images/slider/slide2.jpg)"> 
+				<div class="item" style="background-image: url(images/slider/slide2.gif)"> 
 					<div class="carousel-caption"> <div> 
-						<h2 class="heading animated bounceInDown">Get All in Onepage</h2> 
-						<p class="animated bounceInUp">Everything is outstanding </p> <a class="btn btn-default slider-btn animated fadeIn" href="#">Get Started</a> 
+						<h2 class="heading animated bounceInDown">Get Notifications</h2> 
+						<p class="animated bounceInUp"> Here you will get recognized </p> <a class="btn btn-default slider-btn animated fadeIn" href="https://discord.gg/hWTXCdVe">Join us DISCORD</a> 
 					</div> 
 				</div> 
 			</div> 
 			<div class="item" style="background-image: url(images/slider/slide1.jpg)"> 
 				<div class="carousel-caption"> 
 					<div> 
-						<h2 class="heading animated bounceInRight">Fully Responsive Template</h2> 
-						<p class="animated bounceInLeft">100% Responsive HTML template</p> 
-						<a class="btn btn-default slider-btn animated bounceInUp" href="#">Get Started</a> 
+						<h2 class="heading animated bounceInRight">Our Admin</h2> 
+						<p class="animated bounceInLeft">Trương Tấn Phúc</p> 
+						<a class="btn btn-default slider-btn animated bounceInUp" href="https://www.facebook.com/TTP.0937039625">Contact</a> 
 					</div> 
 				</div> 
 			</div>
 		</div><!--/.carousel-inner-->
-
 		<a class="carousel-left member-carousel-control hidden-xs" href="#main-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
 		<a class="carousel-right member-carousel-control hidden-xs" href="#main-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
 	</div> 
@@ -81,7 +74,6 @@
 	require 'listserver.php'; 
 	require 'contactus.php';
 	require 'footer.php'?>
-	?>
 	<script type="text/javascript" src="js/jquery.js"></script> 
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/smoothscroll.js"></script> 

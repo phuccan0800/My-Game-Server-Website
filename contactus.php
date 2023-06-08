@@ -3,8 +3,8 @@
 			<div class="row text-center clearfix">
 				<div class="col-sm-8 col-sm-offset-2">
 					<div class="contact-heading">
-						<h2 class="title-one">Liên hệ với chúng tôi</h2>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+						<h2 class="title-one">Contact us</h2>
+						<p>We're always here to support you</p>
 					</div>
 				</div>
 			</div>
@@ -17,10 +17,9 @@
 						<div class="contact-address"><address><p><span>TTP</span>OPS</p><strong>Truong Tan Phuc<br>GreenWich University<br>Information Technology Students<br></strong><br></address>
 							<div class="social-icons">
 								<a href="https://www.facebook.com/TTP.0937039625"><i class="fa fa-facebook"></i></a>
-                                <a href="https://github.com/phuccan0800"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-								<a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://github.com/phuccan0800"><i class="fa fa-github"></i></a>
+								<a href="https://www.youtube.com/channel/UCTvh8whb3jBStkUS-re2ufQ"><i class="fa fa-youtube"></i></a>
+								<a href="https://www.linkedin.com/in/phuccan0800/"><i class="fa fa-linkedin"></i></a>
 							</div>
 						</div>
 					</div>

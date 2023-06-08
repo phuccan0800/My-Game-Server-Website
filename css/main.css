@@ -5,7 +5,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	position: relative;
 	font-weight:400;
-	background: #fff;
+	background: #000000;
 	color:#43484E
 }
 
@@ -28,7 +28,7 @@ a {
 	-moz-transition: 300ms;
 	-o-transition: 300ms;
 	transition: 300ms;
-	color:#fc7700;
+	color:#ffffff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -246,7 +246,7 @@ h1, h2, h3, h4, h5, h6 {
 #navigation .navbar-inverse .navbar-nav  .active  a:focus, 
 #navigation .navbar-nav.navbar-right li a:hover {
 	color: #fff;
-	background-color: #fc7700;
+	background-color: #0051ff;
 }
 
 
@@ -266,7 +266,7 @@ h1, h2, h3, h4, h5, h6 {
 #home{
   padding: 0;
   overflow: hidden;
-  position:relative
+  position: relative;
 }
 
 #main-carousel .carousel-inner .item {
@@ -553,10 +553,9 @@ h1, h2, h3, h4, h5, h6 {
 /* List Server */
 
 #listserver {
-  background-image: url("../images/services/service-bg.jpg");
-  color:#fff;
+  color:#666666;
   text-align:center;
-  background-color:	#0A0A13;
+  background-color:	#ffffff;
 }
 
 .listserver {
@@ -566,7 +565,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #listserver h2{
-  color: #fff;
+  color: #666666;
   border-color: #fff;
   margin-bottom:35px
 }

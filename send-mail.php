@@ -24,6 +24,6 @@ $message=$_POST['message'];
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <script>alert("Your message has been sent successfully. We will contact you shortly.");</script>
-<meta HTTP-EQUIV="REFRESH" content="0; url=index.html"> 
+<meta HTTP-EQUIV="REFRESH" content="0; url=index.php"> 
 
 </head>

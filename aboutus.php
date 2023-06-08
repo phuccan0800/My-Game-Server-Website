@@ -3,7 +3,7 @@
 		<div class="text-center">
 			<div class="col-sm-8 col-sm-offset-2">
 				<h2 class="title-one">Why With Us?</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+				<p></p>
 			</div>
 		</div>
 		<div class="about-us">

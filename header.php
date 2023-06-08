@@ -11,11 +11,7 @@
 					<ul class="nav navbar-nav navbar-right"> 
 						<li class="scroll active"><a href="#navigation">Home</a></li> 
 						<li class="scroll"><a href="#about-us">About Us</a></li> 
-						<li class="scroll"><a href="#listserver">List Server</a></li> 
-						<li class="scroll"><a href="#our-team">Our Team</a></li> 
-						<li class="scroll"><a href="#portfolio">Portfolio</a></li> 
-						<li class="scroll"><a href="#clients">Clients</a></li> 
-						<li class="scroll"><a href="#blog">Blog</a></li> 
+						<li class="scroll"><a href="#listserver">List Server</a></li>  
 						<li class="scroll"><a href="#contact">Contact</a></li> 
 					</ul> 
 				</div> 

@@ -10,14 +10,11 @@ if ($result->num_rows > 0) {
         $apiKey = 'CC49FA1EE2785AD6EC89A3CA9D54DA4F';
         $url = "https://api.steampowered.com/IGameServersService/GetServerList/v1/?key=$apiKey&filter=addr%5C$ip:$port";
         $response = file_get_contents($url);
-
         if ($response !== false) {
             $data = json_decode($response, true);
 
             if (isset($data['response']) && isset($data['response']['servers'])) {
                 $servers = $data['response']['servers'];
-
-                // Hiển thị thông tin máy chủ
                 foreach ($servers as $server) {
                     echo '<a>' . $server['name'] . ' - ' . $server['players'] . '/' . $server['max_players'] . ' -> <a href="steam://connect/' . $row['ip'] . ':' . $port . '">->Connect<-</a> <br></a>';
                 }
