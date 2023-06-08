@@ -25,12 +25,12 @@
   td{
     padding: 15px;
     text-align: left;
+    font-family: inherit;
     vertical-align: middle;
     text-transform: uppercase;
     font-weight: 300;
     font-size: 15px;
     text-emphasis-color: #000000;
-
     color: #000000;
     border-bottom: solid 1px rgba(255,255,255,0.1);
   }
