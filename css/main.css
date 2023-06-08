@@ -1,42 +1,4 @@
-/*+++++++++++++++++++++
-=====================================
- Template Name : Himu
- Author Name : Mostafizur Rahman
- Author URI : http://mostafiz.me/
- Template URI :http://mostafiz.me/demo/himu/
- Version : 1.1
-===============================
-+++++++++++++++++++*/
-
-
-
-
-
-/*
-====================================
-------------------------------------
-	1. Typography
-	2. Header
-	3. Main Slider
-	4. About Us
-	5. List Server
-	6. Our Team
-	7. Portfolio
-	8. Clients
-	9. Our Blog
-	10. Contact
-	11. Footer
-	12. Carousel Effect
-	13. Isotope
-	14. Portfolio Hover effect
--------------------------------------
-=====================================
-*/
-
-
-/*====================
-======Typography=====
-======================*/
+/* Typography */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
 
 body {
@@ -239,9 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 	vertical-align: middle;
 }
 
-/*====================
-======Header CSS=====
-======================*/
+/* Header */
 
 #navigation .navbar {
   background:rgba(255, 255, 255, 0.952941);
@@ -290,9 +250,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*======================
-====Main Slider CSS=====
-=======================*/
+/* Slide */
 .home-pattern {
 	height:100%;
 	position:absolute;
@@ -436,9 +394,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/*=======================
-====== About Us CSS =====
-=========================*/
+/* About Us */
 
 
 #about-us {
@@ -594,9 +550,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/*====================
-======lists erver CSS=====
-======================*/
+/* List Server */
 
 #listserver {
   background-image: url("../images/services/service-bg.jpg");
@@ -660,499 +614,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*=====================
-======Our Team CSS=====
-=======================*/
-
-#team-carousel {
-	position:relative
-}
-
-#our-team {
-	background-color:#f6f6f6;
-	color:#43484E;
-}
-
-#our-team h2 {
-	color:#43484E;
-	margin-bottom:35px;
-}
-
-#our-team .team-members {
-	padding:0;
-	margin-top:55px;
-	display:block;
-	overflow:hidden
-}
-
-.single-member {
-	height:430px;
-	background-color:#43484E;
-	border: 1px solid #43484E;
-	color: #f6f6f6;
-	padding: 25px;
-	text-align:center;
-	overflow:hidden;
-}
-
-.single-member img {
-	width:100%
-}
-
-.single-member h4, 
-.single-member h5 {
-	text-align:center
-}
-
-#our-team .socials i {
-	background-color:#fff;
-	border-radius: 50%;
-	color: #43484E;
-	display: inline-block;
-	font-size:16px;
-	height: 30px;
-	line-height:28px;
-	margin-right: 5px;
-	text-align: center;
-	width: 30px;
-	border-width:1px;
-	border-color:#43484E;
-	border-style: solid;
-	opacity:.5;
-	 -webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;  
-}
-
-#our-team .socials a i:hover {
-	opacity:1;
-	color:#fff;
-	border:0
-}
-
-#our-team .socials a .fa-facebook:hover {
-	background: #3B5997;	
-}
-
-#our-team .socials a .fa-twitter:hover {
-  background:#29C5F6
-}
-
-#our-team .socials a .fa-pinterest:hover {
-  background:#C61118
-}
-
-#our-team .socials a .fa-dribbble:hover {
-  background:#FF5C93
-}
-
-#our-team .socials a .fa-linkedin:hover {
-  background:#006DC0
-}
-
-#our-team .socials a .fa-google-plus:hover {
-  background:#D13D2F
-}
-
-#our-team .socials a .fa-flickr:hover {
-  background:#7A797B
-}
-
-.member-left, .member-right {
-	position:absolute;
-	top:-43px;
-	color:#43484E
-}
-
-
-.member-left {
-	left:49%;
-}
-
-.member-right {
-	left:51%
-}
-
-
-/*======================
-======Portfolio CSS=====
-========================*/
-
-#portfolio {
-  padding-top:70px;
-  padding-bottom: 100px;
-  background:#F6F6F6
-}
-
-#portfolio p, 
-#portfolio h2 {
-	margin-bottom:30px;
-}
-
-#portfolio 
-.portfolio-filter {
-  margin-bottom:40px;
-  margin-top:10px;
-}
-
-#portfolio 
-.portfolio-filter li {
-  display: inline-block;
-}
-
-#portfolio 
-.portfolio-filter li a:hover, 
-#portfolio 
-.portfolio-filter li a:focus,
-#portfolio 
-.portfolio-filter li a:active , 
-#portfolio 
-.portfolio-filter li .active{
-	border: 1px solid #fc7700;
-	color: #686868;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-	opacity: 1;
-}
-
-#portfolio 
-.portfolio-filter li a {
-	color: #686868;
-	font-size: 16px;
-	text-transform: uppercase;
-	border: none;
-	background: rgba(67, 72, 78, 0);
-	opacity: .8;
-	border: 1px solid rgba(252, 119, 0, 0);
-	border-radius: inherit;
-}
-
-.portfolio-items > div{
-  padding:0;
-}
-
-.portfolio-items img{
-  width:100%;
-}
-
-.view {  
-  cursor: default;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  width:100%;
-}
-
-.efffect h4 {  
-	opacity: 0;
-	transform: scale(0);
-	transition: all 0.5s linear 0s;
-}
-
-.efffect h3 {
-	opacity: 0;
-	transform: scale(0);
-	-webkit-transition: all 0.5s linear 0s;
-	-moz-transition: all 0.5s linear 0s;
-	-ms-transition: all 0.5s linear 0s;
-	-o-transition: all 0.5s linear 0s;
-	transition: all 0.5s linear 0s;
-}
-
-.efffect img {
-	transform: scaleY(1);
-	-moz-transform: scaleY(1);
-	-webkit-transform: scaleY(1);
-	-o-transform: scaleY(1);
-	-ms-transform: scaleY(1);  
-	transition: all 0.7s ease-in-out 0s;
-	-moz-transition: all 0.7s ease-in-out 0s;
-	-webkit-transition: all 0.7s ease-in-out 0s;
-	-o-transition: all 0.7s ease-in-out 0s;
-}
-
-.view img {
-	display: block;
-	position: relative;
-}
-
-.efffect .mask {
-	background-color: #F6F6F6;
-    border:4px solid #333333;
-	-webkit-transition: all 0.5s linear 0s;
-	-moz-transition: all 0.5s linear 0s;
-	-ms-transition: all 0.5s linear 0s;
-	-o-transition: all 0.5s linear 0s;
-	transition: all 0.5s linear 0s;
-	opacity: 0
-}
-
-.view .mask, .view .content {
-	height:100%;
-	left: 0;
-	overflow: hidden;
-	position: absolute;
-	top: 0;
-	width:100%;
-}
-
-.mask h3 {
-	color: #43484E;
-	font-family: cabin;
-	font-size: 22px;
-	font-weight: 700;
-	margin-top: 30px;
-	text-transform: uppercase;
-	transition: height 500ms ease 0s;
-}
-
-.mask h4 {
-	color:#000;
-	font-family: roboto;
-	font-size: 14px;
-	font-weight: 200;
-	padding: 0 35px 5px;
-}
-
-.mask i {
-	border: 2px solid #333;
-	border-radius: 50%;
-	color: #333;
-	font-size: 17px;
-	margin-left: 8px;
-	padding: 8px;
-}
-
-.mask i:hover{
-	background-color:#fc7700;
-	color:#fff;  
-}
-
-
-
-/*====================
-======Clients CSS=====
-======================*/
-
-#clients{
-	background-image: url("../images/clients/client-bg.jpg");
-	background-color:#0A0A13;
-}
-
-#clients h2 {
-	margin-bottom:30px;
-	color:#f6f6f6
-}
-
-#clients p {
-	color:#fff
-}
-
-#clients-carousel  {
-	margin-top:45px;
-	text-align:center;
-}
-
-#clients-carousel 
-.carousel-inner {
-	display:inline-block;
-	width:60%
-}
-
-.carousel-inner blockquote {
-  border-left: 0 none;
-  margin:15px;
-  padding:0;
-  text-align: left;
-}
-
-.carousel-inner blockquote p {
-	font-size:17px;
-	
-}
-
-#clients-carousel 
-.carousel-inner img {
-	border-right:5px solid#eee;
-	padding-right:10px
-}
-
-#clients-carousel 
-.carousel-indicators {
-	top: 100%;
-	left: 50%;
-	margin: 0 0 0 -50px;
-	position: absolute;
-	width: 100px;
-}
-
-#clients-carousel .item {
-	background:#43484E
-}
-
-#clients-carousel 
-.carousel-indicators li{
-	background: rgba(0, 0, 0, 0);
-	border: 1px solid #fff;
-	width: 13px;
-	height: 13px;
-	margin-left: 5px;
-	text-indent: -9999px;
-	display: inline-block;
-}
-
-#clients-carousel 
-.carousel-indicators {
-  margin-top: 20px;
-}
-
-.clients{
-  text-align: center;
-}
-
-.clients h2 {
-	color: #FFFFFF;
-	font-family: 'Roboto',sans-serif;
-	font-size: 30px;
-	font-weight: 500;
-	line-height: 40px;
-	text-transform: uppercase;
-	margin-top: 0;
-}
-
-.clients p {
-	color: #FFFFFF;
-	font-family: 'Roboto',sans-serif;
-	font-size: 14px;
-	font-weight: 300;
-	letter-spacing: 3px;
-	text-transform: uppercase;
-}
-
-.clients p span{
-	color:#fc7700;
-}
-
-
-
-/*=====================
-======Our Blog CSS=====
-======================*/
-
-#blog {
-	padding-bottom:75px;
-	padding-top:75px
-}
-
-.blog-heading {
-	margin-bottom: 35px;
-	margin-top: 15px;
-}
-
-.single-blog {
-	margin-bottom: 30px;
-	background-color:#F7F7F7;
-	padding:25px;
-	transition: all 1s ease 0s;
-	-moz-transition: all 1s ease 0s;
-	-webkit-transition: all 1s ease 0s;
-	-o-transition: all 1s ease 0s;
-	-webkit-box-shadow: 0 2px 0 0 #ddd;
-	box-shadow: 0 2px 0 0 #ddd;
-}
-
-.single-blog:hover {
-	background-color:#43484E;
-	color:#fff
-}
-
-.single-blog:hover.single-blog h2 {
-	color:#fff
-}
-
-.single-blog:hover.single-blog .btn-primary {
-	background-color:#fc7700;
-	color:#fff;
-	border-color:#fff;
-	transition: all 0.9s ease 0s;
-	-moz-transition: all 0.9s ease 0s;
-	-webkit-transition: all 0.9s ease 0s;
-	-o-transition: all 0.9s ease 0s;
-}
-
-.single-blog img{
-	width:100%;
-	margin-bottom:20px
-}
-
-.single-blog h2 {
-	color:#43484E;
-	font-size:24px;
-}
-
-.single-blog h2{
-	margin:0;
-	margin-bottom:15px;
-}
-
-.single-blog ul {
-	padding:0;
-	overflow:hidden;
-}
-
-.single-blog ul li {
-	border-right: 2px solid #999999;
-	float: left;
-	line-height: 10px;
-	list-style: none;
-	margin-right: 10px;
-	padding-right: 10px;
-	font-size: 12px;
-	color:#999;
-}
-
-.single-blog ul li:last-child {
-	border:none;
-}
-
-.blog-content {
-	margin-bottom: 25px;
-	margin-top: 0;
-}
-
-.single-blog .btn-primary {
-	text-transform: uppercase;
-	border: 1px solid #fc7700;
-	color: #686868;
-	background-color: rgba(255, 255, 255, 0);
-	border-color: #fc7700;
-}
-
-.single-blog:hover.single-blog .btn-primary:hover{
-	background-color:#fc7700;
-	color:#fff;
-}
-
-#blog-detail .modal-body {
-	padding:30px;
-}
-
-#blog-detail .modal-body img {
-	width:100%
-}
-
-#blog-detail .close {
-	margin-right: -15px;
-    margin-top: -25px;
-}
-
-
-
-/*====================
-======Contact CSS=====
-======================*/
+/* Contact Us */
 
 #contact {
 	overflow:hidden;
@@ -1293,16 +755,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #contact-form-section .form-control:focus {
-	border-color: #fc7700;
+	border-color: #0051ff;
 	outline: 0;
 	-webkit-box-shadow:none;
 	box-shadow:none;
 }
 
 
-/*====================
-======Footer CSS=====
-======================*/
+/* Footer */
 
 #footer {
 	background-color:#f6f6f6;
@@ -1322,9 +782,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*============================
-======Carousel Effect CSS=====
-==============================*/
+/* Carousel Effect */
 
 
 .carousel.scale .carousel-inner > .item.left > div:nth-child(1),
@@ -1372,9 +830,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*==================================
-====== Isotope Recommended CSS=====
-====================================*/
+/* Isotope Recommended CSS */
 
 /**** Isotope Filtering ****/
 .isotope-item {
@@ -1423,107 +879,3 @@ h1, h2, h3, h4, h5, h6 {
   transition-duration: 0s;
 }
 /* End: Recommended Isotope styles */
-
-
-
-
-/*==================================
-====== Portfolio Hover effect=======
-====================================*/
-
-
-.efffect img {
-   -webkit-transform: scaleY(1);
-   -moz-transform: scaleY(1);
-   -o-transform: scaleY(1);
-   -ms-transform: scaleY(1);
-   transform: scaleY(1);
-   -webkit-transition: all 0.7s ease-in-out;
-   -moz-transition: all 0.7s ease-in-out;
-   -o-transition: all 0.7s ease-in-out;
-   -ms-transition: all 0.7s ease-in-out;
-   transition: all 0.7s ease-in-out;
-}
-.efffect .mask {
-   -webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-   -o-transition: all 0.5s linear;
-   -ms-transition: all 0.5s linear;
-   transition: all 0.5s linear;
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-   cursor: zoom-in;
-}
-.efffect h4 {   
-   background: transparent;
-   -webkit-transform: scale(0);
-   -moz-transform: scale(0);
-   -o-transform: scale(0);
-   -ms-transform: scale(0);
-   transform: scale(0);
-   -webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-   -o-transition: all 0.5s linear;
-   -ms-transition: all 0.5s linear;
-   transition: all 0.5s linear;
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-}
-.efffect h3 {
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-   font-size:22px;
-   -webkit-transform: scale(0);
-   -moz-transform: scale(0);
-   -o-transform: scale(0);
-   -ms-transform: scale(0);
-   transform: scale(0);
-   -webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-   -o-transition: all 0.5s linear;
-   -ms-transition: all 0.5s linear;
-   transition: all 0.5s linear;
-}
-.mask a i {
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-   -webkit-transform:rotate(-180deg);
-   -moz-transform:rotate(-180deg);
-   -o-transform:rotate(-180deg);
-   -ms-transform:rotate(-180deg);
-   transform:rotate(-180deg);
-   -webkit-transition:all 0.5s linear 0.7s;
-   -moz-transition: all 0.5s linear 0.7s;
-   -o-transition:all 0.5s linear 0.7s;
-   -ms-transition:all 0.5s linear 0.7s;
-   transition:all 0.5s linear 0.7s;
-}
-.efffect:hover img {
-   -webkit-transform: scale(10);
-   -moz-transform: scale(10);
-   -o-transform: scale(10);
-   -ms-transform: scale(10);
-   transform: scale(10);
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-}
-.efffect:hover .mask {
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-   filter: alpha(opacity=100);
-   opacity: 1;
-}
-.efffect:hover h4,.efffect:hover h3,.efffect:hover a i {
-   -webkit-transform: scale(1);
-   -moz-transform: scale(1);
-   -o-transform: scale(1);
-   -ms-transform: scale(1);
-   transform: scale(1);
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-   filter: alpha(opacity=100);
-   opacity: 1;
-}
