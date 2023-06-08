@@ -42,38 +42,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6">
-					<h3>Our Skills</h3>
-					<div class="skill-bar">
-						<div class="skillbar clearfix " data-percent="90%">
-							<div class="skillbar-title">
-								<span>HTML5 &amp; CSS3</span>
-							</div>
-							<div class="skillbar-bar"></div>
-							<div class="skill-bar-percent">90%</div>
-						</div> <!-- End Skill Bar -->
-						<div class="skillbar clearfix" data-percent="85%">
-							<div class="skillbar-title"><span>UI Design</span></div>
-							<div class="skillbar-bar"></div>
-							<div class="skill-bar-percent">85%</div>
-						</div> <!-- End Skill Bar -->
-						<div class="skillbar clearfix " data-percent="70%">
-							<div class="skillbar-title"><span>jQuery</span></div>
-							<div class="skillbar-bar"></div>
-							<div class="skill-bar-percent">70%</div>
-						</div> <!-- End Skill Bar -->
-						<div class="skillbar clearfix " data-percent="60%">
-							<div class="skillbar-title"><span>PHP</span></div>
-							<div class="skillbar-bar"></div>
-							<div class="skill-bar-percent">60%</div>
-						</div> <!-- End Skill Bar -->
-						<div class="skillbar clearfix " data-percent="75%">
-							<div class="skillbar-title"><span>Wordpress</span></div>
-							<div class="skillbar-bar"></div>
-							<div class="skill-bar-percent">75%</div>
-						</div> <!-- End Skill Bar --></div>
-					</div>
-				</div>
 			</div>
 		</div>
 	</section><!--/#about-us-->
