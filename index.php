@@ -3,17 +3,15 @@
 <head> 
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<meta name="description" content="Creative One Page Parallax Template">
-	<meta name="keywords" content="Creative, Onepage, Parallax, HTML5, Bootstrap, Popular, custom, personal, portfolio" /> 
-	<meta name="author" content=""> 
+	<meta name="author" content="TTP"> 
 	<title>VN-TOP SERVER</title> 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/prettyPhoto.css" rel="stylesheet"> 
 	<link href="css/font-awesome.min.css" rel="stylesheet"> 
 	<link href="css/animate.css" rel="stylesheet"> 
 	<link href="css/main.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet"> 
-	<link rel="shortcut icon" href="images/logo.png"> 
+	<link href="css/responsive.css" rel="stylesheet">
+	<link rel="shortcut icon" href="images/ico/logo.png"> 
 </head><!--/head-->
 <body>
 	<div class="preloader">
@@ -55,7 +53,7 @@
 					</div> 
 				</div> 
 			</div> 
-			<div class="item" style="background-image: url(images/slider/slide1.jpg)"> 
+			<div class="item" style="background-image: url(images/slider/slide1.gif)"> 
 				<div class="carousel-caption"> 
 					<div> 
 						<h2 class="heading animated bounceInRight">Our Admin</h2> 

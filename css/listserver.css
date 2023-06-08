@@ -1,0 +1,81 @@
+  table{
+    width:65%;
+    table-layout: fixed;
+  }
+  .tbl-header{
+    background-color: rgba(255,255,255,0.3);
+    
+   }
+  .tbl-content{
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    vertical-align: middle;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: rgb(0, 81, 255);
+  }
+  td{
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 15px;
+    text-emphasis-color: #000000;
+
+    color: #000000;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+  }
+  button {
+    text-align: center;
+    display: flex;
+    font-family: inherit;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+    width: 100%;
+  }
+  
+  button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+  button:hover span {
+    transform: translateX(7px);
+  }
+  /* for custom scrollbar for webkit browser*/
+  
+  ::-webkit-scrollbar {
+      width: 6px;
+  } 
+  ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  } 
+  ::-webkit-scrollbar-thumb {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  }

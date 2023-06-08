@@ -106,5 +106,20 @@ function Scroll() {
 		},6000);
 	});
 });
-
+function scrollReveal() {
+	var revealElements = document.querySelectorAll(".scroll-reveal");
+	for (var i = 0; i < revealElements.length; i++) {
+	  var windowHeight = window.innerHeight;
+	  var revealTop = revealElements[i].getBoundingClientRect().top;
+	  var revealPoint = 50;
+  
+	  if (revealTop < windowHeight - revealPoint) {
+		revealElements[i].classList.add("reveal");
+	  }
+	}
+  }
+  
+  window.addEventListener("scroll", scrollReveal);
+  window.addEventListener("resize", scrollReveal);
+  
 
