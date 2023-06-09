@@ -707,3 +707,146 @@ table{
     ::-webkit-scrollbar-thumb {
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     }
+    deletebutton {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1em;
+      border: 0px solid transparent;
+      background-color: rgba(100,77,237,0.08);
+      border-radius: 1.25em;
+      transition: all 0.2s linear;
+     }
+     
+     deletebutton:hover {
+      box-shadow: 3.4px 2.5px 4.9px rgba(0, 0, 0, 0.025),
+       8.6px 6.3px 12.4px rgba(0, 0, 0, 0.035),
+       17.5px 12.8px 25.3px rgba(0, 0, 0, 0.045),
+       36.1px 26.3px 52.2px rgba(0, 0, 0, 0.055),
+       99px 72px 143px rgba(0, 0, 0, 0.08);
+     }
+     
+     .tooltip {
+      position: relative;
+      display: inline-block;
+     }
+     
+     .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 4em;
+      background-color: rgba(0, 0, 0, 0.253);
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      top: 25%;
+      left: 110%;
+     }
+     
+     .tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      margin-top: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent rgba(0, 0, 0, 0.253) transparent transparent;
+     }
+     
+     .tooltip:hover .tooltiptext {
+      visibility: visible;
+     }
+     addbutton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      outline: none;
+      border: 0;
+      vertical-align: middle;
+      text-decoration: none;
+      background: transparent;
+      padding: 0;
+      font-size: inherit;
+      font-family: inherit;
+     }
+     
+     addbutton.add-more {
+      width: 12rem;
+      height: auto;
+     }
+     
+     addbutton.add-more .circle {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      background: #282936;
+      border-radius: 1.625rem;
+     }
+     
+     addbutton.add-more .circle .icon {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background: #fff;
+     }
+     
+     addbutton.add-more .circle .icon.arrow {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      left: 0.625rem;
+      width: 1.125rem;
+      height: 0.125rem;
+      background: none;
+     }
+     
+     addbutton.add-more .circle .icon.arrow::before {
+      position: absolute;
+      content: "";
+      top: -0.29rem;
+      right: 0.0625rem;
+      width: 0.625rem;
+      height: 0.625rem;
+      border-top: 0.125rem solid #fff;
+      border-right: 0.125rem solid #fff;
+      transform: rotate(45deg);
+     }
+     
+     addbutton.add-more .button-text {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 1.85rem;
+      color: #282936;
+      font-weight: 700;
+      line-height: 1.6;
+      text-align: center;
+      text-transform: uppercase;
+     }
+     
+     addbutton:hover .circle {
+      width: 100%;
+     }
+     
+     addbutton:hover .circle .icon.arrow {
+      background: #fff;
+      transform: translate(1rem, 0);
+     }
+     
+     addbutton:hover .button-text {
+      color: #fff;
+     }
