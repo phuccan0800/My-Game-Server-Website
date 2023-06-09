@@ -1,5 +1,10 @@
 <?
-
+	function getTable(){
+		require('connect.php');
+		$sql = "SHOW TABLES";
+		$result = $conn->query($sql);
+		return $result;
+	}
 	function getData($sql){
 		require('connect.php');
 
