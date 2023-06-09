@@ -7,7 +7,8 @@
     
    }
   .tbl-content{
-    height:300px;
+    min-height: auto;
+    max-height:500px;
     overflow-x:auto;
     margin-top: 0px;
     border: 1px solid rgba(255,255,255,0.3);
