@@ -3,7 +3,6 @@ define('CHECK', true);
 require 'connect.php';
 $sql = "SELECT * FROM serverlist";
 $result = $conn->query($sql);
-// Đóng kết nối tới cơ sở dữ liệu
 ?>
 <link href="css/listserver.css" rel="stylesheet">
 <section id="listserver">

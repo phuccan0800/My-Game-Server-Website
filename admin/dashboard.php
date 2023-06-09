@@ -19,7 +19,7 @@
 ?>
 <body>
 <div class="container">
-<nav>
+	<nav>
 		<ul class="mcd-menu">
 			<li>
 				<a href="?page=dashboard" <?if ($page == "dashboard") {echo'class="active"'; } ?>>
@@ -43,5 +43,45 @@
 		</ul>
 	</nav>
 </div>
+	<div class="tbl-header" >
+			<table cellpadding="0" cellspacing="0" border="0">
+				<thead>
+					<tr>
+						<? $sql = "SELECT * FROM $page"; 
+						$result = $conn->query($sql); 
+						if ($result->num_rows > 0) {
+							$row = $result->fetch_assoc();
+							foreach ($row as $key => $value) {
+							echo '<th>'.$key .'</th>';
+							}
+						}?>
+							
+					</tr>
+				</thead>
+			</table>
+	</div>
+	<div class="tbl-content">
+			<table cellpadding="0" cellspacing="0" border="0">
+			<tbody align="center">
+				<?
+				$sql = "SELECT * FROM $page"; 
+				$result = $conn->query($sql); 
+				if ($result->num_rows > 0) {
+					while ($row = $result->fetch_assoc()) {
+						echo '<tr>';
+						foreach ($row as $key => $value) {
+							if ($value <>'') {
+								echo '<td>' . $value . '</td>';
+							} else echo '<td> NULL </td>';
+						}
+						echo '</tr>';
+					}
+				} else {
+					echo 'NO INFORMATION';
+				}
+				?>
+			</tbody>
+			</table>
+	</div>
 </body>
 </html>
