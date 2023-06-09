@@ -6,7 +6,6 @@ $result = $conn->query($sql);
 ?>
 <link href="css/listserver.css" rel="stylesheet">
 <section id="listserver">
-
 	<div class="text-center">
 		<h2 class="title-one">List Server</h2>
 		<div class="tbl-header" align="center">

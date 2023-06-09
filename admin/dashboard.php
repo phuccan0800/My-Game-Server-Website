@@ -10,9 +10,12 @@
     <title>ADMIN PAGE</title>
     <link href="css/dashboard.css" rel="stylesheet" type="text/css" />
     <script src="js/myjs.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <?
 	$page = $_GET['page'];
+	$edit = $_GET['edit'];
+	$delete = $_GET['delete'];
 	if($page == ''){
 		$page = 'dashboard';
 	}
@@ -43,7 +46,7 @@
 		</ul>
 	</nav>
 </div>
-	<? if($page <> "dashboard") {?>
+	<? if($page <> "dashboard" && $edit=="" && $delete=="") {?>
 		<div class="tbl-header" >
 			<table cellpadding="0" cellspacing="0" border="0">
 				<thead>
@@ -62,26 +65,28 @@
 			</table>
 	</div>
 	<div class="tbl-content">
-			<table cellpadding="0" cellspacing="0" border="0" id="editableTable">
+			<table cellpadding="0" cellspacing="0" border="0">
 			<tbody align="center">
 				<?
 				$sql = "SELECT * FROM $page"; 
 				$result = $conn->query($sql); 
+				$id=0;
 				if ($result->num_rows > 0) {
 					while ($row = $result->fetch_assoc()) {
 						echo '<tr>';
 						foreach ($row as $key => $value) {
 							if ($value <>'') {
-								echo '<td contenteditable="true">' . $value . '</td>';
-							} else echo '<td contenteditable="true"> NULL </td>';
+								echo '<td >' . $value . '</td>';
+							} else echo '<td > NULL </td>';
 						}
+						$id=$id+1;
 						echo '<td > 
-						<deletebutton class="tooltip">
+						<a href="?page='.$page.'&edit='.$id.'"><deletebutton class="tooltip">
 					  <svg style="color: blue" width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> 
 					  <path d="M19 19H5V17H19V19ZM10 14.42L6 10.42L7.41 9.01L10 11.59L16.59 5L18 6.42L10 14.42Z" fill="#6361D9"></path> </svg>
 						<span class="tooltiptext">Edit</span>
-					  </deletebutton> 
-					  <deletebutton class="tooltip">
+					  </deletebutton> </a>
+					  <a href="?page='.$page.'&delete='.$id.'"><deletebutton class="tooltip">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" height="25" width="25">
 						  <path fill="#6361D9" d="M8.78842 5.03866C8.86656 4.96052 8.97254 4.91663 9.08305 4.91663H11.4164C11.5269 4.91663 11.6329 4.96052 11.711 5.03866C11.7892
 						   5.11681 11.833 5.22279 11.833 5.33329V5.74939H8.66638V5.33329C8.66638 5.22279 8.71028 5.11681 8.78842 5.03866ZM7.16638 5.74939V5.33329C7.16638 4.82496 
@@ -94,7 +99,7 @@
 							7.74972 14.6666C7.74972 14.6412 7.74842 14.6158 7.74584 14.5905L6.99681 7.24996H7.91638Z" clip-rule="evenodd" fill-rule="evenodd"></path>
 						</svg>
 						<span class="tooltiptext">delete</span>
-					  </deletebutton>
+					  </deletebutton></a>
 					  
 					  </td>';
 						echo '</tr>';
@@ -105,18 +110,70 @@
 				?>
 			</tbody>
 			</table>
+			<addbutton class="add-more">
+			<span class="circle" aria-hidden="true">
+			<span class="icon arrow"></span>
+			</span>
+			<span class="button-text">Add More</span>
+			</addbutton>
 	</div>
-	<? } else {
-		echo '<h align="center">WELLCOME TO ADMIN PAGE </h>';
+	<? } 
+	else if ( $edit <> "") {
+		?>
+		<div class="tbl-header" >
+			<table cellpadding="0" cellspacing="0" border="0">
+				<thead>
+					<tr>
+						<? $sql = "SELECT * FROM $page"; 
+						$result = $conn->query($sql); 
+						if ($result->num_rows > 0) {
+							$row = $result->fetch_assoc();
+							foreach ($row as $key => $value) {
+							echo '<th>'.$key .'</th>';
+							}
+						}?>
+						<th> action </th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+		<div class="tbl-content">
+			<table cellpadding="0" cellspacing="0" border="0" id="dataTable" method="POST">
+			<tbody align="center">
+				<?
+				$edit--;
+				$sql = "SELECT * FROM $page LIMIT $edit, 1;"; 
+				$result = $conn->query($sql); 
+				if ($result->num_rows > 0) {
+						$row = $result->fetch_assoc();
+						foreach ($row as $key => $value) {
+							if ($value <>'') {
+								echo '<td contenteditable="true">' . $value . '</td>';
+							} else echo '<td contenteditable="true"> NULL </td>';
+							$editvalue++;
+						}
+						echo '<td > 
+						<input type="hidden" contenteditable="true" name="name" value= "'.$page.'" >
+						<input type="hidden"contenteditable="true" name="id" value= "'.$edit.'" >
+						<a class="save-btn"><deletebutton class="tooltip" type="submit">
+					  <svg style="color: blue" width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+					  <path d="M19 19H5V17H19V19ZM10 14.42L6 10.42L7.41 9.01L10 11.59L16.59 5L18 6.42L10 14.42Z" fill="#6361D9"></path> </svg>
+						<span class="tooltiptext" >DONE</span>
+					  </deletebutton> </a></td></tr>';
+					} else { echo 'NO INFORMATION';
+				}
+				?>
+			</tbody>
+			</table>
+	</div>
+<?}
+	else if ( $delete <> "") {
+		echo 'DELETE';
+	}
+	else {
+		echo '<h>WELLCOME TO ADMIN PAGE </h>';
 	}?>
-	<addbutton class="add-more">
-  <span class="circle" aria-hidden="true">
-  <span class="icon arrow"></span>
-  </span>
-  <span class="button-text">Add More</span>
-</addbutton>
-</buttonadd>
-	<script>
+<script>
     var table = document.getElementById('editableTable');
     
     table.addEventListener('input', function(e) {
@@ -126,5 +183,33 @@
         }
     });
 </script>
+<script>
+        $(document).ready(function() {
+            // Khi nhấn nút Lưu
+            $(".save-btn").click(function() {
+                var $row = $(this).closest("tr"); // Dòng chứa nút Lưu
+                var data = {}; // Đối tượng chứa dữ liệu
+                
+                // Lặp qua từng ô dữ liệu trong dòng
+                $row.find("td[contenteditable='true']").each(function() {
+                    var columnName = $(this).index(); // Lấy chỉ số cột
+                    var columnValue = $(this).text().trim(); // Lấy giá trị
+
+                    data[columnName] = columnValue;
+                });
+                
+                // Gửi yêu cầu AJAX để lưu dữ liệu
+                $.ajax({
+                    type: "POST",
+                    url: "save.php", // Đường dẫn tới tệp xử lý
+                    data: data,
+                    success: function(response) {
+                        // Xử lý kết quả trả về
+                        alert(response);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

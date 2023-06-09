@@ -762,8 +762,8 @@ table{
      }
      addbutton {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: left;
+      align-items: left;
       position: relative;
       display: inline-block;
       cursor: pointer;

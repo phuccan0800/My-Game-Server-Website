@@ -7,7 +7,7 @@
 </head>
 <?	
 	session_start();
- 	require_once ('session.php');
+ 	require ('session.php');
 	$action = $_GET['action'];
 ?>
 <body>
