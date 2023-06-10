@@ -67,7 +67,7 @@
 		<a class="carousel-right member-carousel-control hidden-xs" href="#main-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
 	</div> 
 	</section><!--/#home-->
-	<? 
+	<?php 
 	require 'aboutus.php';  	
 	require 'listserver.php'; 
 	require 'contactus.php';

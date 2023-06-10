@@ -2,7 +2,6 @@
 // Kiểm tra xem yêu cầu gửi lên có phải là phương thức POST hay không
 require 'connect.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Kiểm tra xem có dữ liệu được gửi hay không
     if (!empty($_POST)) {
         $databaseName = $_POST['name'];
         $id = $_POST['id'];
@@ -11,7 +10,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         $id2=0;
         echo $databaseName;
-        echo $ArrValue[0];
         $sql = "SELECT * FROM $databaseName"; 
         $result = $conn->query($sql);
         

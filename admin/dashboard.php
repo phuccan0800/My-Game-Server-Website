@@ -1,8 +1,6 @@
-<? 	
-	session_start();
- 	require ('session.php');
+<?php 	
 	require ('connect.php');
-?>
+?> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -12,7 +10,7 @@
     <script src="js/myjs.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<?
+<?php
 	$page = $_GET['page'];
 	$edit = $_GET['edit'];
 	$delete = $_GET['delete'];
@@ -25,11 +23,15 @@
 	<nav>
 		<ul class="mcd-menu">
 			<li>
-				<a href="?page=dashboard" <?if ($page == "dashboard") {echo'class="active"'; } ?>>
+				<a href="?page=dashboard" 
+				<?php 
+					if ($page == "dashboard") 
+					echo'class="active"';  
+				?> >
 					<strong>Dashboard</strong>
 				</a>
 			</li>
-			<?
+			<?php
 				$sql = "SHOW TABLES";
 				$result = $conn->query($sql);
 				if ($result->num_rows > 0) {
@@ -46,19 +48,20 @@
 		</ul>
 	</nav>
 </div>
-	<? if($page <> "dashboard" && $edit=="" && $delete=="") {?>
+	<?php if($page <> "dashboard" && $edit=="" && $delete=="") { ?>
 		<div class="tbl-header" >
 			<table cellpadding="0" cellspacing="0" border="0">
 				<thead>
 					<tr>
-						<? $sql = "SELECT * FROM $page"; 
+						<?php 
+						$sql = "SELECT * FROM $page"; 
 						$result = $conn->query($sql); 
 						if ($result->num_rows > 0) {
 							$row = $result->fetch_assoc();
 							foreach ($row as $key => $value) {
 							echo '<th>'.$key .'</th>';
 							}
-						}?>
+						} ?>
 						<th> action </th>
 					</tr>
 				</thead>
@@ -67,7 +70,7 @@
 	<div class="tbl-content">
 			<table cellpadding="0" cellspacing="0" border="0">
 			<tbody align="center">
-				<?
+				<?php
 				$sql = "SELECT * FROM $page"; 
 				$result = $conn->query($sql); 
 				$id=0;
@@ -117,14 +120,15 @@
 			<span class="button-text">Add More</span>
 			</addbutton>
 	</div>
-	<? } 
+	<?php } 
 	else if ( $edit <> "") {
 		?>
 		<div class="tbl-header" >
 			<table cellpadding="0" cellspacing="0" border="0">
 				<thead>
 					<tr>
-						<? $sql = "SELECT * FROM $page"; 
+						<?php 
+						$sql = "SELECT * FROM $page"; 
 						$result = $conn->query($sql); 
 						if ($result->num_rows > 0) {
 							$row = $result->fetch_assoc();
@@ -140,7 +144,7 @@
 		<div class="tbl-content">
 			<table cellpadding="0" cellspacing="0" border="0" id="dataTable" method="POST">
 			<tbody align="center">
-				<?
+				<?php
 				$edit--;
 				$sql = "SELECT * FROM $page LIMIT $edit, 1;"; 
 				$result = $conn->query($sql); 
@@ -166,7 +170,7 @@
 			</tbody>
 			</table>
 	</div>
-<?}
+<?php }
 	else if ( $delete <> "") {
 		echo 'DELETE';
 	}

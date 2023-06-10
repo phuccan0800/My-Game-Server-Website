@@ -25,7 +25,7 @@ $result = $conn->query($sql);
 		<div class="tbl-content" align="center">
 			<table cellpadding="0" cellspacing="0" border="0">
 			<tbody align="center">
-				<?
+				<?php
 				if ($result->num_rows > 0) {
 					while ($row = $result->fetch_assoc()) {
 						$ip = gethostbyname($row['ip']);
@@ -65,6 +65,6 @@ $result = $conn->query($sql);
 </section>
 </section><!--/#listserver-->
 <script type="text/javascript" src="js/listserver.js"></script> 
-<?
+<?php
 $conn->close();
 ?>

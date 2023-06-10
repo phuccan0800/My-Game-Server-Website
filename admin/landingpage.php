@@ -1,4 +1,4 @@
-<? 
+<?php
     define('CHECK', true);
     require 'connect.php'; ?>
 <!DOCTYPE html>

@@ -1,4 +1,4 @@
-<?
+<?php
 	function getTable(){
 		require('connect.php');
 		$sql = "SHOW TABLES";

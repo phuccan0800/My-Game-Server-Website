@@ -5,9 +5,9 @@
 <title>ADMIN SERVER</title>
 <link href="css/admin.css" rel="stylesheet" type="text/css" />
 </head>
-<?	
+<?php
 	session_start();
- 	require ('session.php');
+ 	require_once ('session.php');
 	$action = $_GET['action'];
 ?>
 <body>
@@ -29,7 +29,7 @@
         </table>
       </form>
      </div>
-     <?
+     <?php
 	 	if($action == 'fail'){
 			echo('<div align="center"><font color="#CC0000">Invalid username and password!!</font></div>');
 		}
