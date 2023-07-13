@@ -1,5 +1,4 @@
 <?php
-// Kiểm tra xem yêu cầu gửi lên có phải là phương thức POST hay không
 require 'connect.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST)) {
