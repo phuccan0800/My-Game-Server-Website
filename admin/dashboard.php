@@ -172,7 +172,9 @@
 	</div>
 <?php }
 	else if ( $delete <> "") {
-		echo 'DELETE';
+		$ssql =" DELETE FROM $page WHERE id = $delete"; 
+		$result = $conn->query($ssql);
+		echo 'DELETE DONE';
 	}
 	else {
 		echo '<h>WELLCOME TO ADMIN PAGE </h>';
@@ -191,24 +193,20 @@
         $(document).ready(function() {
             // Khi nhấn nút Lưu
             $(".save-btn").click(function() {
-                var $row = $(this).closest("tr"); // Dòng chứa nút Lưu
-                var data = {}; // Đối tượng chứa dữ liệu
-                
-                // Lặp qua từng ô dữ liệu trong dòng
+                var $row = $(this).closest("tr"); 
+                var data = {};
                 $row.find("td[contenteditable='true']").each(function() {
-                    var columnName = $(this).index(); // Lấy chỉ số cột
-                    var columnValue = $(this).text().trim(); // Lấy giá trị
-
+                    var columnName = $(this).index();
+                    var columnValue = $(this).text().trim(); 
+					var name = $page;
+					var $edit;
                     data[columnName] = columnValue;
                 });
-                
-                // Gửi yêu cầu AJAX để lưu dữ liệu
                 $.ajax({
                     type: "POST",
-                    url: "save.php", // Đường dẫn tới tệp xử lý
+                    url: "save.php", 
                     data: data,
                     success: function(response) {
-                        // Xử lý kết quả trả về
                         alert(response);
                     }
                 });
